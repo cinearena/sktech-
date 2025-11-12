@@ -157,7 +157,6 @@
         const uiConfig = {
           controlPanelElements: [
             'play_pause',
-            'mute',
             'volume',
             'time_and_duration',
             'spacer',
