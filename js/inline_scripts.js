@@ -87,8 +87,8 @@
       // Share Button functionality
       document.getElementById('sharePageBtn').addEventListener('click', function() {
         const shareData = {
-          title: 'SK CRIC INFO',
-          text: 'Watch SK CRIC INFO live stream now!',
+          title: 'Cine Arena',
+          text: 'Watch Cine Arena live stream now!',
           url: window.location.href
         };
 
