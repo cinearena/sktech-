@@ -27,32 +27,32 @@
     //   }, 1000);
     // }
 
-    // Modal functionality
-    (function(){
-      const modal = document.getElementById('skpop');
-      const closeBtn = document.getElementById('closeModal');
-      const joinBtn = document.getElementById('joinChannel');
-      const alreadyBtn = document.getElementById('alreadyJoined');
+    // // Modal functionality
+    // (function(){
+    //   const modal = document.getElementById('skpop');
+    //   const closeBtn = document.getElementById('closeModal');
+    //   const joinBtn = document.getElementById('joinChannel');
+    //   const alreadyBtn = document.getElementById('alreadyJoined');
       
-      function showModal(){ 
-        modal.classList.add('show'); 
-        modal.setAttribute('aria-hidden','false'); 
-      }
+    //   function showModal(){ 
+    //     modal.classList.add('show'); 
+    //     modal.setAttribute('aria-hidden','false'); 
+    //   }
       
-      function hideModal(){ 
-        modal.classList.remove('show'); 
-        modal.setAttribute('aria-hidden','true'); 
-      }
+    //   function hideModal(){ 
+    //     modal.classList.remove('show'); 
+    //     modal.setAttribute('aria-hidden','true'); 
+    //   }
       
-      closeBtn.addEventListener('click', hideModal);
-      alreadyBtn.addEventListener('click', hideModal);
-      joinBtn.addEventListener('click', function(){ 
-        window.open('https://t.me/cine_arena','_blank'); 
-        hideModal(); 
-      });
+    //   closeBtn.addEventListener('click', hideModal);
+    //   alreadyBtn.addEventListener('click', hideModal);
+    //   joinBtn.addEventListener('click', function(){ 
+    //     window.open('https://t.me/cine_arena','_blank'); 
+    //     hideModal(); 
+    //   });
       
-      setTimeout(showModal, 700);
-    })();
+    //   setTimeout(showModal, 700);
+    // })();
 
     // Social media sharing functionality
     document.addEventListener('DOMContentLoaded', function() {
