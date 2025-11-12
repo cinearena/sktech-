@@ -36,14 +36,20 @@
 .shaka-controls-container:hover .shaka-controls-button-panel {
   opacity: 1 !important;
 }
-/* === FIX: Hide Shaka progress bar when controls are hidden === */
-.shaka-controls-container:not(:hover) .shaka-bottom-controls {
+
+/* === FINAL FIX: Hide all parts of seek bar when not hovering === */
+.shaka-controls-container:not(:hover) .shaka-bottom-controls,
+.shaka-controls-container:not(:hover) .shaka-seek-bar-container,
+.shaka-controls-container:not(:hover) .shaka-slider-container {
   opacity: 0 !important;
   visibility: hidden !important;
   transition: opacity 0.3s ease;
 }
 
-.shaka-controls-container:hover .shaka-bottom-controls {
+.shaka-controls-container:hover .shaka-bottom-controls,
+.shaka-controls-container:hover .shaka-seek-bar-container,
+.shaka-controls-container:hover .shaka-slider-container {
   opacity: 1 !important;
   visibility: visible !important;
 }
+
