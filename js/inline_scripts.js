@@ -1,31 +1,31 @@
 
-    // // Function to show invalid ID message and redirect
-    // function showInvalidIdMessage() {
-    //   // Create error message element
-    //   const errorDiv = document.createElement('div');
-    //   errorDiv.className = 'error-message';
-    //   errorDiv.innerHTML = `
-    //     <h3>Invalid Stream ID</h3>
-    //     <p>Sorry, the stream you're trying to access is not available or the ID is incorrect.</p>
-    //     <p>Redirecting to our Telegram channel in <span class="error-countdown">5</span> seconds...</p>
-    //   `;
+    // Function to show invalid ID message and redirect
+    function showInvalidIdMessage() {
+      // Create error message element
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'error-message';
+      errorDiv.innerHTML = `
+        <h3>Invalid Stream ID</h3>
+        <p>Sorry, the stream you're trying to access is not available or the ID is incorrect.</p>
+        <p>Redirecting to our Telegram channel in <span class="error-countdown">5</span> seconds...</p>
+      `;
       
-    //   document.body.appendChild(errorDiv);
+      document.body.appendChild(errorDiv);
       
-    //   // Countdown and redirect
-    //   let countdown = 5;
-    //   const countdownElement = errorDiv.querySelector('.error-countdown');
+      // Countdown and redirect
+      let countdown = 5;
+      const countdownElement = errorDiv.querySelector('.error-countdown');
       
-    //   const countdownInterval = setInterval(() => {
-    //     countdown--;
-    //     countdownElement.textContent = countdown;
+      const countdownInterval = setInterval(() => {
+        countdown--;
+        countdownElement.textContent = countdown;
         
-    //     if (countdown <= 0) {
-    //       clearInterval(countdownInterval);
-    //       window.location.href = 'https://t.me/cine_arena';
-    //     }
-    //   }, 1000);
-    // }
+        if (countdown <= 0) {
+          clearInterval(countdownInterval);
+          window.location.href = 'https://t.me/cine_arena';
+        }
+      }, 1000);
+    }
 
     // Modal functionality
     (function(){
